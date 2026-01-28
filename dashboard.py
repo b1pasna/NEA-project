@@ -32,7 +32,7 @@ def dashboard_graphs():
 app = dash.Dash(__name__)
 
 app.layout = html.Div([
-    html.H1("📊 Crypto Prediction Dashboard"),
+    html.H1("Crypto Prediction Dashboard"),
 
     html.Div([
         html.H3("🌍 Market Summary"),
@@ -42,7 +42,7 @@ app.layout = html.Div([
     ]),
 
     html.Div([
-        html.H3("💼 User Portfolio"),
+        html.H3("User Portfolio"),
         html.Ul([
             html.Li(f"{coin['symbol']}: {coin['amount']} coins")
             for coin in user_portfolio
@@ -50,12 +50,12 @@ app.layout = html.Div([
     ]),
 
     html.Div([
-        html.H3("📈 Price Charts"),
+        html.H3("Price Charts"),
         dcc.Graph(figure=dashboard_graphs())
     ]),
 
     html.Div([
-        html.H3("🔔 Notifications"),
+        html.H3("Notifications"),
         html.Ul([
             html.Li(alert) for alert in notif_array
         ])
