@@ -35,7 +35,7 @@ app.layout = html.Div([
     html.H1("Crypto Prediction Dashboard"),
 
     html.Div([
-        html.H3("🌍 Market Summary"),
+        html.H3("Market Summary"),
         html.P(f"Total Market Cap: ${market['market_cap']:,.0f}"),
         html.P(f"24h Volume: ${market['volume']:,.0f}"),
         html.P(f"BTC Dominance: {market['btc_dominance']:.2f}%")
