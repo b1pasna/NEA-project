@@ -13,7 +13,7 @@ def fetch_crypto_tickers():
 # loop through pages 1 to 10
     for page in range(1, max_pages + 1):
         params = {
-            "vs_currency": "usd",
+            "vs_currency": "gbp",
             "order": "market_cap_desc",
             "per_page": max_per_page,
             "page": page
