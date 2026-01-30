@@ -84,7 +84,7 @@ class CryptoNotifier:
                 print(f" - {alert['crypto']} → {alert['target_price']}")
 
 
-# example use
+# use
 if __name__ == "__main__":
     notifier = CryptoNotifier()
 
