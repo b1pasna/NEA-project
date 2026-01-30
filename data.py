@@ -5,7 +5,7 @@ import pandas as pd
 selected_crypto = "BTC"
 selected_timeframe = 30  # days
 
-# -------- Arrays --------
+# arrays 
 user_portfolio = [
     {"symbol": "BTC", "amount": 0.5, "current_value": 0},
     {"symbol": "ETH", "amount": 2, "current_value": 0},
